@@ -12,7 +12,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <title>My PHP | Home</title>
   <?php
-    require_once("core/css.php");
+    require_once("dist/css/css.php");
   ?>
 
 </head>
@@ -123,7 +123,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- REQUIRED SCRIPTS -->
 <?php 
-    require_once("core/javaScript.php");
+    require_once("dist/js/javaScript.php");
 ?>
 </body>
 </html>
