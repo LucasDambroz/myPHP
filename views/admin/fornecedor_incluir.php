@@ -53,12 +53,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>CNPJ/CPF - NOME/RazaoSocial - EndereçoCompleto - Telefone/Email - Status</h5>
+                                    <h5>Cadastar Formulario</h5>
                                 </div>
-                                <div class="card-body">
-                                    <form role="form">
+                                <form role="form" name="formCadastrarFornecedor" action="processa_cadastro.php" method="POST">
+                                <div class="card-body">             
                                         <div class="row">
-                                            <div class="col-md 2">
+                                            <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label>Estabelecimento</label>
                                                     <div class="form-check">
@@ -82,70 +82,71 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <div class="col-md 3" id="divNomeRazaoSocial">
                                                 <div class="form-group">
                                                     <label></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control" name="nome">
                                                 </div>
                                             </div>
                                             <div class="col-md 3" id="divNomeFantasia">
                                                 <div class="form-group">
                                                     <label></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control" name="fantasia">
                                                 </div>
                                             </div>
                                             <div class="col-md 3" id="divInscricaoEstadual">
                                                 <div class="form-group">
                                                     <label></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control" name="inscricao">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="col-md-2">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label for="cep" >CEP</label>
+                                                    <label>CEP</label>
                                                     <input type="text" class="form-control" id="cep" name="cep">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label for="rua" >Rua</label>
+                                                    <label>Rua</label>
                                                     <input type="text" class="form-control" id="rua" name="rua">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label for="numero">Número</label>
+                                                    <label>Número</label>
                                                     <input type="text" class="form-control" id="numero" name="numero">
                                                 </div>
                                             </div>
-                                            <div class="col-md-2">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label for="bairro">Bairro</label>
+                                                    <label>Bairro</label>
                                                     <input type="text" class="form-control" id="bairro" name="bairro">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label for="cidade">Cidade</label>
+                                                    <label>Cidade</label>
                                                     <input type="text" class="form-control" id="cidade" name="cidade">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label for="uf">UF</label>
+                                                    <label>UF</label>
                                                     <input type="text" class="form-control" id="uf" name="uf">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label for="ibge">IBGE</label>
+                                                    <label>IBGE</label>
                                                     <input type="text" class="form-control" id="ibge" name="ibge">
                                                 </div>
                                             </div>
                                         </div>
                                 </div>
                                 <div class="card-footer">
-                                    este é o fotter
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                    <button type="reset" class="btn btn-link">Limpar formulario</button>
                                 </div>
                             </div>
                             </form>
@@ -153,17 +154,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                 </div>
             </div>
-    <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
 
-    <!-- Control Sidebar -->
-    <?php require_once("layout/controlSideBar.php"); ?>
-    <!-- /.control-sidebar -->
+        <!-- Control Sidebar -->
+        <?php require_once("layout/controlSideBar.php"); ?>
+        <!-- /.control-sidebar -->
 
-    <!-- #region Footer -->
-    <?php require_once("layout/footer.php"); ?>
-    <!-- #endregion Footer -->
+        <!-- #region Footer -->
+        <?php require_once("layout/footer.php"); ?>
+        <!-- #endregion Footer -->
     </div>
     <!-- ./wrapper -->
 
@@ -171,7 +172,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <?php require_once("dist/js/javascript.php");?>
     <script src="dist/js/pages/fornecedor/fornecedor_incluir.js"></script>
-    <script src="dist/js/viaCep.js"></script>
+    <script src="dist/js/viacep.js"></script>
 </body>
 
 </html>
